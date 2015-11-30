@@ -6,9 +6,7 @@ from random import randint
 def simulate(number_attacking, number_defending):
 	"""Returns a tuple with the result of the attack."""
 
-
 	while number_attacking > 1 and number_defending > 0: 
-
 
 		# One attacking die, one defending die
 		if number_attacking == 2 and number_defending == 1:
@@ -24,7 +22,6 @@ def simulate(number_attacking, number_defending):
 
 				number_attacking -= 1
 
-
 		# One attacking die, two defending die
 		if number_attacking == 2 and number_defending > 1:
 
@@ -38,7 +35,6 @@ def simulate(number_attacking, number_defending):
 			else:
 
 				number_attacking -= 1
-
 
 		# Two attacking die, one defending die
 		if number_attacking == 3 and number_defending == 1:
@@ -89,7 +85,6 @@ def simulate(number_attacking, number_defending):
 
 			attacker_roll = sorted([randint(1,6) for i in range(3)], reverse=True)
 			defender_roll = sorted([randint(1,6) for i in range(2)], reverse=True)
-
 
 			for i in range(2):
 
